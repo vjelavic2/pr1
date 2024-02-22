@@ -91,7 +91,7 @@ def graph():
 
     # Crtanje grafa
     plt.figure(figsize=(10, 6))
-    plt.hist(srčane_bolesti, bins=20, color='skyblue', edgecolor='black', alpha=0.7)
+    plt.hist(srčane_bolesti, bins=20, color='#B8B7D8', edgecolor='black', alpha=0.7)
     plt.title('Raspodjela srčanih bolesti po dobi')
     plt.xlabel('Dob')
     plt.ylabel('Broj ljudi s srčanim bolestima')
@@ -114,7 +114,7 @@ def graph2():
 
     # Crtanje grafa
     plt.figure(figsize=(10, 6))
-    plt.hist(srčane_bolesti, bins=20, color='skyblue', edgecolor='black', alpha=0.7)
+    plt.hist(srčane_bolesti, bins=20, color='#B8B7D8', edgecolor='black', alpha=0.7)
     plt.title('Raspodjela srčanih bolesti po dobi')
     plt.xlabel('Spol')
     plt.ylabel('Broj ljudi s srčanim bolestima')
@@ -134,7 +134,7 @@ def graph3():
     srčane_bolesti = df[df['HeartDisease'] == 1]['Cholesterol']
 
     plt.figure(figsize=(10, 6))
-    plt.hist(srčane_bolesti, bins=20, color='skyblue', edgecolor='black', alpha=0.7)
+    plt.hist(srčane_bolesti, bins=20, color='#B8B7D8', edgecolor='black', alpha=0.7)
     plt.title('Raspodjela srčanih bolesti po dobi')
     plt.xlabel('Kolesterol')
     plt.ylabel('Broj ljudi s srčanim bolestima')
