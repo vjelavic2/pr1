@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <title>Result</title>
+</head>
+<body>
+    {% if prediction %}
+        <h1>Prediction:</h1>
+        <p>{{ prediction }}</p>
+    {% endif %}
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body class="body2">
+    <h1>Enter your data and test possibility of heart failure</h1>
+    <form action="/predict" method="POST">
+        <div class="labels">
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age">
+            <label for="sex">Sex:</label>
+            <input type="text" id="sex" name="sex">
+            <label for="restingBP">Resting BP:</label>
+            <input type="text" id="restingBP" name="restingBP">
+            <button type="submit" class="submit-btn">CALCULATE</button>
+        </div>
+    </form>
+
+    <div class="result">
+        {% if prediction %}
+        <h2>Prediction:</h2>
+        <p>{{ prediction }}</p>
+        {% endif %}
+    </div>
+
+    <div class="sidebar">
+        <a href="#" class="btn3">TEST</a>
+        <a href="page2.html" class="btn3">Review statistics by age</a>
+        <a href="page3.html" class="btn3">Review statistics by sex</a>
+        <a href="page4.html" class="btn3">Review statistics by cholesterol</a>
+    </div>
+</body>
+
+</html>

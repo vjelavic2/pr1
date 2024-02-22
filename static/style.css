@@ -1,0 +1,97 @@
+.body1 {
+    background-color: white;
+    color: rgb(10, 10, 10);
+    background-image: url("../images/Slika4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.body1 h1 {
+    text-align: center;
+    margin-top: 20%;
+    font-size: 3em;
+    padding-bottom: 5%;
+    background-color: rgba(184, 183, 216, 0.5);
+}
+
+.btn1 {
+    text-decoration: none;
+    background-color: rgb(174, 0, 0);
+    color: white;
+    padding: 1% 2% 1% 2%;
+    border-radius: 8px;
+    margin-left: 40%;
+}
+
+.btn2 {
+    text-decoration: none;
+    background-color: rgb(174, 0, 0);
+    color: white;
+    padding: 1% 2% 1% 2%;
+    border-radius: 8px;
+    margin-left: 5%;
+}
+
+.body2 {
+    background-color: rgba(233, 233, 249, 0.5);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(174, 0, 0);
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    margin-top: 70%;
+    margin-left: -5%;
+    box-shadow: 0px 0px 15px rgba(12, 0, 144, 0.865);
+}
+
+
+.btn3 {
+    color: white;
+    font-weight: 800;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 12% 12%;
+    border: 1px solid rgba(255, 255, 255, 0.514);
+}
+
+.body2 h1 {
+    text-align: center;
+    margin-top: 2%;
+    grid-column: 2;
+    background-color: rgba(184, 183, 216, 0.5);
+    margin-left: -30%;
+    padding-top: 5%;
+    padding-left: 15%;
+    height: 30%;
+}
+
+.labels {
+    margin-left: 10%;
+    grid-column: 2;
+    margin-top: -10%;
+}
+
+.submit-btn {
+    text-decoration: none;
+    background-color: rgb(174, 0, 0);
+    color: white;
+    padding: 1% 2% 1% 2%;
+    border-radius: 8px;
+    margin-left: 5%;
+
+}
+
+input {
+    border: 2px solid rgb(174, 0, 0);
+}
+
+.result {
+    background: rgb(43, 255, 0);
+}
